@@ -1,0 +1,316 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.header{
+    width: 100%;
+    height:10px;
+    position: fixed;
+    display:flex;
+    background-color:rgb(97, 97, 102);
+    top:0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 10000;
+}
+.header:hover{
+    width: 100%;
+    height:75px;
+    position: fixed;
+    display:flex;
+    color: rgb(97, 97, 102);
+    background-color:rgb(97, 97, 102);
+    top:0px;
+
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%; /* Asegura que nav ocupe todo el ancho */
+    padding: 0 20px; /* Opcional: espacio a los lados */
+}
+
+nav a{
+    text-decoration: none;
+    display:flex;
+    align-items:center;
+    height: 100%;
+    padding: 0 15px;
+    color:rgba(97, 97, 102, 0);
+}
+nav a:hover{
+    transition:background-color 1.5s ease-in-out, 1s ease;
+    background-color: rgb(231, 231, 231);
+    background-size:cover;
+
+    color:rgb(0, 0, 0);
+
+}
+
+
+
+ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+     text-align: center;
+     height:100%;
+     display: flex;
+    
+}
+
+
+
+/**
+ContenedoresInfo
+**/
+.main{
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width:350px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 75px;
+    display: flex;
+    float: right;
+    height: 600vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.5;
+    
+}
+
+.main aside{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.mainb{
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 970px;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 75px;
+    display: flex;
+    float: left;
+    margin-left:0px;
+    bottom: 20px;
+    height: 750px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.mainb article{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    
+
+
+}
+.jp{
+    color: aliceblue;
+    background-color: black;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+.ide{
+    width:350px;
+    background-color: black;
+    color: white;
+
+
+
+}
+
+
+.mainc{
+    color:rgb(255, 255, 255);
+    background-color: rgb(70, 70, 70);
+    width: 970px;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 75px;
+    display: flex;
+    float: left;
+    margin-left:0px;
+    bottom: 20px;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    
+    
+}
+
+.mainc article{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    
+
+
+}
+
+
+
+
+
+.maind{
+    color:rgb(255, 255, 255);
+    background-color: rgb(97, 97, 102);
+    width:970px;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 75px;
+    display: flex;
+    margin-left:0px;
+    bottom: 20px;
+    height: 700px;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.maind article{
+    display: flex;
+    height: 100%;
+    text-align: center;
+
+}
+
+.pd{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.hd{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* 📱 TABLET */
+@media (max-width: 1024px) {
+
+    .main,
+    .mainb,
+    .mainc,
+    .maind {
+        width: 100%;
+        float: none;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .main {
+        height: auto;
+    }
+
+    .mainb,
+    .mainc,
+    .maind {
+        height: auto;
+        margin-top: 75px;
+    }
+}
+
+/* 📱 MÓVIL */
+@media (max-width: 768px) {
+
+    /* Header siempre visible (no hover) */
+    .header {
+        height: 60px;
+    }
+
+    .header:hover {
+        height: 60px;
+    }
+
+    nav {
+        padding: 0 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav a {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+        color: white; /* visible en móvil */
+    }
+
+    /* Contenedores en columna */
+    .main,
+    .mainb,
+    .mainc,
+    .maind {
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+        display: block;
+    }
+
+    /* Footer siempre visible */
+    .footer {
+        height: 50px;
+        color: black;
+    }
+
+    .footer:hover {
+        height: 50px;
+    }
+
+    .footer a {
+        color: white;
+    }
+}
+
+/* 📱 MÓVIL PEQUEÑO */
+@media (max-width: 480px) {
+
+    nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .main,
+    .mainb,
+    .mainc,
+    .maind {
+        padding: 10px;
+    }
+}

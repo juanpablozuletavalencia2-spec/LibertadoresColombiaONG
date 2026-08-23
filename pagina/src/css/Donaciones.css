@@ -1,0 +1,67 @@
+.padre{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 0px 0px px 0px seashell;
+    border-top:5px solid rgb(248, 5, 5);
+    border-bottom:7px solid whitesmoke;
+    border-left:1px solid white;
+    border-right: 1px solid white;
+}
+
+.name,.n_Cuenta,.cvv{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 🔥 centra todo */
+}
+
+.name label,.n_Cuenta label,.cvv label{
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.name input,.n_Cuenta input,.cvv input{
+    width: 80%; /* 🔥 controla el tamaño */
+    padding: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.Banco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#bbva{
+    color:blue;
+}
+
+#davi{color:red;}
+
+#ent{color:rgb(255, 255, 255);}
+
+#san{
+    color:white;
+}
+#banl{
+    color:yellow;
+}
+
